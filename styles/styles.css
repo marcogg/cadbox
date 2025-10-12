@@ -52,3 +52,53 @@ h6 {
     /* Orange-500 */
     transform: skew(-20deg);
 }
+
+.card-container {
+    background: linear-gradient(0deg, #D38631, #fffdeae9, #ffb300af);
+    /* White background */
+    border-radius: 0.5rem;
+    /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    transition: box-shadow 0.3s ease;
+    border-radius: 1.5rem;
+    border: #FFB400, 2px solid;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 4px 29px, rgb(204, 154, 1));
+}
+
+.bar-bg {
+    background: linear-gradient(90deg, #D38631, #F4D652);
+    height: 300px;
+    position: relative;
+    bottom: 0;
+    transform: translate(0, -80%);
+    z-index: 0
+}
+
+.d-none {
+    display: none;
+}
+
+.img-clip {
+    /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); */
+}
+
+.clip-outline-shape {
+    position: relative;
+    top: -155px;
+    left: 70%;
+    --s: 20px;
+    /* control the shape (can be percentage) */
+
+    height: 155px;
+    aspect-ratio: 3/5;
+    clip-path: polygon(0 0, var(--s) 0, 100% 50%, var(--s) 100%, 0 100%, calc(100% - var(--s)) 50%);
+    background: #F38C09;
+}
+
+.clip-container {
+    position: relative;
+}
