@@ -16,6 +16,10 @@ h6 {
     font-family: 'Designer', sans-serif;
 }
 
+.font-designer {
+    font-family: 'Designer', sans-serif !important;
+}
+
 .font-roboto {
     font-family: 'Roboto', sans-serif;
 }
@@ -36,7 +40,6 @@ h6 {
 }
 
 .text {
-    color: white;
     text-align: center;
     padding: 12px 16px;
     font-weight: bold;
@@ -47,10 +50,24 @@ h6 {
     position: relative;
     min-width: 160px;
     height: 100%;
-    background-color: transparent;
-    border: 2px solid #f97316;
+    background: transparent;
     /* Orange-500 */
     transform: skew(-20deg);
+    border-image: linear-gradient(to right, #D38631 0%, #F4D652 100%) 1;
+    border-radius: 5px;
+    /* this doesn't work */
+    border-width: 4px;
+    border-style: solid;
+    padding: 5px;
+    padding: 4px;
+    color: #ffffff;
+}
+
+.outline-trapezoid:hover,
+.outline-trapezoid:focus,
+.outline-trapezoid:active {
+    background: linear-gradient(0deg, #D38631, #fffdeae9, #ffb300af);
+    color: #131721 !important;
 }
 
 .card-container {
@@ -101,4 +118,10 @@ h6 {
 
 .clip-container {
     position: relative;
+}
+
+.cta {
+    background: linear-gradient(90deg, #D38631, #F4D652);
+    color: #131721 !important;
+    font-weight: bold;
 }
